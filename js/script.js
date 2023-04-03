@@ -3,9 +3,6 @@ $(document).ready(function (event) {
      $('.header, .header__burger, .menu').toggleClass('active');
      $('body').toggleClass('lock');
    });
-   $('.marquees').width($(this).find('>div:first-child').width()); 
-   $('.marquees > div:first-child ').css('animation', 'marquee1 50s linear infinite -25s'); 
-   $('.marquees > div:last-child ').css('animation', 'marquee2 50s linear infinite 0s'); 
    $('.menu__item').click(function (event) {
       $('.header, .header__burger, .menu').removeClass('active');
       $('body').removeClass('lock');

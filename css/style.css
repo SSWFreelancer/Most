@@ -2413,6 +2413,11 @@ a {
     padding-right: 0;
     position: relative;
   }
+  .road__container .slick-list{
+    width: calc(100% + 64px);
+    margin-left:-64px;
+    padding-left: 64px;
+  }
   .road__container:after {
     position: absolute;
     content: "";
@@ -2428,6 +2433,27 @@ a {
 @media (max-width: 600px) {
   .road__title {
     max-width: 200px;
+  }
+}
+@media(max-width:1215px){
+  .road__container .slick-list{
+    width: calc(100% + 56px);
+    margin-left:-56px;
+    padding-left: 56px;
+  }
+}
+@media(max-width:991px){
+  .road__container .slick-list{
+    width: calc(100% + 32px);
+    margin-left:-32px;
+    padding-left: 32px;
+  }
+}
+@media(max-width:700px){
+  .road__container .slick-list{
+    width: calc(100% + 24px);
+    margin-left:-24px;
+    padding-left: 24px;
   }
 }
 .road__content {
@@ -3228,7 +3254,7 @@ a {
           align-items: center;
   padding: 40px 0 48px;
 }
-.marquees div {
+.marquees marquee {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3242,14 +3268,14 @@ a {
   font-size: 56px;
   line-height: 1.1428571429;
 }
-.marquees div > span {
+.marquees marquee > span {
   margin-right: 54px;
 }
 @media (max-width: 1500px) {
   .marquees {
     padding: 28px 0 36px;
   }
-  .marquees div {
+  .marquees marquee {
     font-size: 48px;
   }
 }
@@ -3257,61 +3283,11 @@ a {
   .marquees {
     padding: 16px 0 24px;
   }
-  .marquees div {
+  .marquees marquee {
     font-size: 40px;
   }
 }
 
-.marquees > div:first-child {
-  display: inline-block;
-}
-
-.marquees > div:last-child {
-  display: inline-block;
-
-}
-
-@-webkit-keyframes marquee1 {
-  from {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-@keyframes marquee1 {
-  from {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-@-webkit-keyframes marquee2 {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-}
-@keyframes marquee2 {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-}
 .benefits__marquees {
   background: #0EBA80;
 }
